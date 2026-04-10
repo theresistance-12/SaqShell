@@ -54,19 +54,19 @@ void call_calc () {
 			printf ("Exitting to SaqShell...\n");
 			break;
 		}
-		int items_found = sscanf (calc_ram, "%lf, %c, %lf", &num1, &op, &num2);
+		int items_found = sscanf (calc_ram, "%lf %c %lf", &num1, &op, &num2);
 		if (items_found = 3) {
-			if (op = '+') {
+			if (op == '+') {
 				printf ("Result: %g\n", num1 + num2);
 			}
-			else if (op = '-') {
+			else if (op == '-') {
 				printf ("Result: %g\n", num1 - num2);
 			}
-			else if (op = '*') {
+			else if (op == '*') {
 				printf ("Result: %g\n", num1 * num2);
 			}
-			else if (op = '/') {
-				if (num2 != 0) {
+			else if (op == '/') {
+				if (num2 == 0) {
 					printf ("Divide by NULL Err!\n");
 				} else {
 					printf ("Result: %g\n", num1 / num2);
