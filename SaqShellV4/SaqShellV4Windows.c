@@ -3,6 +3,7 @@
 #include <string.h>
 #include <windows.h>
 #include <stdlib.h>
+#include <direct.h>
 char datantpd[10000000]; //hat notepad user data
 void call_ntpd () {
     printf ("Welcome to SaqShell's Notepad! Type ::EXIT:: to quit, ::SAVE:: to save. Keep in mind to use save ONCE and then exit. else your data will be overwritten. If you save and then exit SaqNtpd, use ::EDIT:: to continue your editing.\n\n\n"); //welcome msg
